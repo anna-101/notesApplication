@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" configfailurepolicy="skip">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="com.utilities.listeners.CustomListeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/DELL/Documents/automation-testing-framework">
+        <classes><class name="com.tests.NotesAppTest">
+            <methods><include name="onboardingTest"/></methods>
+        </class>
+        </classes>
+    </test>
+</suite>
